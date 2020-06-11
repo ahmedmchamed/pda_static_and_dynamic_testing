@@ -35,8 +35,8 @@ end
 
 ## Comments below
 
-**General comment: The code references an attribute of the class (value) but does not perform a 
-'require_relative' to read the other class. The following line should be present:**
+**General comment: The code references an attribute of the 'Card' class (value) but does not perform a 
+'require_relative' to read the other class (unless it doesn't matter if you're going to do everything in the test file?). The following line should be present:**
 ```ruby
 require_relative('./card')
 ```
