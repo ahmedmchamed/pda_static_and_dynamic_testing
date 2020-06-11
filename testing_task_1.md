@@ -40,7 +40,7 @@ end
 if card.value == 1
 ```
 **line 18 - function definition syntax error ('dif' instead of 'def). There's also no comment to separate
-the parameters. It should be:**
+the parameters. The indentation is also off. It should be:**
 ```ruby
 def highest_card(card1, card2)
 ```
