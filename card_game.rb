@@ -32,3 +32,5 @@ def self.cards_total(cards)
 
   return "You have a total of" + total
 end
+
+end

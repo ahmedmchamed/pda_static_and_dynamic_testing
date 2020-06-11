@@ -33,19 +33,31 @@ def self.cards_total(cards)
 end
 ```
 
-### Comments below
+## Comments below
 
 **General comment: The code references an attribute of the class (value) but does not perform a 
-'require_relative' to read the other class. The following lines should be present:**
+'require_relative' to read the other class. The following line should be present:**
 ```ruby
 require_relative('./card')
+```
+**I think all of the functions should be Class functions, instead of instance functions, so that 
+'check_for_ace' and 'highest_card' are written as:**
+```ruby
+def Class.check_for_ace(card)
+
+def Class.highest_card(card1, card2)
+```
+
+**line 10 - function name not in the right convention. It should be snake case, like this:**
+```ruby
+def check_for_ace(card)
 ```
 
 **line 11 - condition error ('=' instead of '=='), and the indentation for the function is off. It should be:**
 ```ruby
 if card.value == 1
 ```
-**line 18 - function definition syntax error ('dif' instead of 'def). There's also no comment to separate
+**line 18 - function definition syntax error ('dif' instead of 'def). There's also no comma to separate
 the parameters. The indentation is also off. It should be:**
 ```ruby
 def highest_card(card1, card2)
