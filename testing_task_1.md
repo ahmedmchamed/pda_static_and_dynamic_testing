@@ -43,9 +43,9 @@ require_relative('./card')
 **I think all of the functions should be Class functions, instead of instance functions, so that 
 'check_for_ace' and 'highest_card' are written as:**
 ```ruby
-def Class.check_for_ace(card)
+def self.check_for_ace(card)
 
-def Class.highest_card(card1, card2)
+def self.highest_card(card1, card2)
 ```
 
 **line 10 - function name not in the right convention. It should be snake case, like this:**
