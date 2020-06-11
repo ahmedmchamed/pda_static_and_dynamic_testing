@@ -41,7 +41,7 @@ end
 require_relative('./card')
 ```
 
-**line 11 - condition error ('=' instead of '=='), it should be:**
+**line 11 - condition error ('=' instead of '=='), and the indentation for the function is off. It should be:**
 ```ruby
 if card.value == 1
 ```
@@ -60,7 +60,7 @@ end
 ```ruby
 return card1
 ```
-**line 25 - extra 'end' statement, it should not be there.**
+**line 25 - Class 'end' statement is in the wrong place, it should be at the very end of the code.**
 
 **line 28 - no initial value given to local variable 'total', it should be:**
 ```ruby
@@ -74,5 +74,4 @@ for card in cards
   total += card.value
 end
 return "You have a total of #{total}"
-```
 
