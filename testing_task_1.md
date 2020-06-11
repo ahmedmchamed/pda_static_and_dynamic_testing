@@ -33,7 +33,7 @@ def self.cards_total(cards)
 end
 ```
 
-### line 11 - condition error ('=' instead of '=='), it should be:
+**line 11 - condition error ('=' instead of '=='), it should be:**
 ```ruby
 if card.value == 1
 ```
