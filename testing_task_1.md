@@ -33,11 +33,14 @@ def self.cards_total(cards)
 end
 ```
 
+### Comments below
+
 **line 11 - condition error ('=' instead of '=='), it should be:**
 ```ruby
 if card.value == 1
 ```
-**line 18 - function definition syntax error ('dif' instead of 'def), it should be:**
+**line 18 - function definition syntax error ('dif' instead of 'def). There's also no comment to separate
+the parameters. It should be:**
 ```ruby
 def highest_card(card1, card2)
 ```
