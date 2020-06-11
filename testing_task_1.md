@@ -35,6 +35,12 @@ end
 
 ### Comments below
 
+**General comment: The code references an attribute of the class (value) but does not perform a 
+'require_relative' to declare the class constructor. The following line should be present**
+```ruby
+require_relative('./card')
+```
+
 **line 11 - condition error ('=' instead of '=='), it should be:**
 ```ruby
 if card.value == 1
@@ -43,6 +49,12 @@ if card.value == 1
 the parameters. The indentation is also off. It should be:**
 ```ruby
 def highest_card(card1, card2)
+  if card1.value > card2.value
+    return card
+  else
+    return card2
+  end
+end
 ```
 **line 20 - return variable does not match parameter name ('card' instead of 'card1'), it should be:**
 ```ruby
