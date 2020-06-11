@@ -57,7 +57,7 @@ def check_for_ace(card)
 ```ruby
 if card.value == 1
 ```
-**line 18 - function definition syntax error ('dif' instead of 'def). There's also no comma to separate
+**line 18 - function definition syntax error ('dif' instead of 'def'). There's also no comma to separate
 the parameters. The indentation is also off. It should be:**
 ```ruby
 def highest_card(card1, card2)
@@ -78,7 +78,7 @@ return card1
 ```ruby
 total = 0
 ```
-**line 31 - return statement in the wrong place. For loop will end in the wrong place. It's also
+**line 31 - return statement in the wrong place. For loop will exit at the wrong point. It's also
 probably better to have a space at the end of the string, although I think it would be even better
 to use string interpolation, like this:**
 ```ruby
