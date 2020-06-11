@@ -36,7 +36,7 @@ end
 ### Comments below
 
 **General comment: The code references an attribute of the class (value) but does not perform a 
-'require_relative' to declare the class constructor. The following line should be present**
+'require_relative' to read the other class. The following lines should be present:**
 ```ruby
 require_relative('./card')
 ```

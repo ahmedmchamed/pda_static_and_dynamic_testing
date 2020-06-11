@@ -6,13 +6,13 @@ require_relative('./card')
 
 class CardGame
 
-  def checkforAce(card)
-    if card.value == 1
-      return true
-    else
-      return false
-    end
+def checkforAce(card)
+  if card.value == 1
+    return true
+  else
+    return false
   end
+end
 
 def highest_card(card1, card2)
   if card1.value > card2.value
